@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   font-size: 16px;
-  font-family: verdana;
+  font-family: sans-serif;
 }
 
 .main {
@@ -24,27 +24,13 @@ body {
   width: 365px;
   background: url("../imgs/name.png");
 }
+
 .bg_content {
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  margin-left: -291px;
-  top: 50%;
-  margin-top: -240px;
-  height: 445px;
-  width: 582px;
-  background: url("../imgs/bg_content.png");
+  margin: 130px 0;
+  padding: 30px 10px;
 }
 
 .content_wrapper {
-  position: absolute;
-  font-size: 1em;
-  line-height: 1.4em;
-  width: 484px;
-  height: 376px;
-  top: 33px;
-  left: 48px;
-  color: #4f4f4f;
 }
 
 .content_wrapper > blockquote {
@@ -57,20 +43,70 @@ body {
   border-radius: 12px;
   padding: 3px 11px;
   font-size: 12px;
+  line-height: 1.5rem;
+  text-decoration: none;
 }
 
-.content_wrapper > .footer {
+.content_wrapper > .social {
   font-size: small;
   line-height: 1.2em;
   text-align: right;
 }
 
-.footer > a {
+.social > a {
   text-decoration: none;
   margin-left: 0.2em;
 }
-.footer > a > img {
+.social > a > img {
   height: 23px;
+}
+
+@media only screen and (max-width: 499px) {
+  .bg_content {
+    background-color: #ffffff30;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .bg_content {
+    padding: 30px 50px;
+    background-color: #ffffff30;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .bg_content {
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -291px;
+    top: 50%;
+    margin-top: -240px;
+    height: 445px;
+    width: 582px;
+    background: url("../imgs/bg_content.png");
+  }
+
+  .content_wrapper {
+    position: absolute;
+    font-size: 1em;
+    line-height: 1.4em;
+    width: 484px;
+    height: 376px;
+    top: 33px;
+    left: 48px;
+    color: #4f4f4f;
+  }
+
+  .content_wrapper > .social {
+    font-size: small;
+    line-height: 1.2em;
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    width: 28px;
+  }
 }
 
 .water_wave {
